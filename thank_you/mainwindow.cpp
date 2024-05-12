@@ -119,12 +119,12 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
     //统计四个点位是否连接
     int nLeft      = CountNearItem(item,QPoint(-1, 0));
     int nLeftUp    = CountNearItem(item,QPoint(-1,-1));
-    int nLeftDown  = CountNearItem(item,QPoint(-1, 0));
-    int nUp         = CountNearItem(item,QPoint( 0,-1));
+    int nLeftDown  = CountNearItem(item,QPoint(-1, 1));
+    int nUp        = CountNearItem(item,QPoint( 0,-1));
     int nRight     = CountNearItem(item,QPoint( 1, 0));
     int nRightUp   = CountNearItem(item,QPoint( 1,-1));
     int nRightDown = CountNearItem(item,QPoint( 1, 1));
-    int nDown       = CountNearItem(item,QPoint( 0, 1));
+    int nDown      = CountNearItem(item,QPoint( 0, 1));
 
     if(
               (nLeft + nRight) >= 4

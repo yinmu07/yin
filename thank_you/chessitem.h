@@ -13,7 +13,6 @@ public:
     {
         return ((_pt == t1._pt) && (_black == t1._black));
     }
-
     QPoint _pt;//棋子的位置
     bool _black;//棋子的颜色
 };

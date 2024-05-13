@@ -99,7 +99,8 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
     //获取鼠标点击的位置
     qDebug()<<event->pos()<<endl;
 
-    QPoint pt;//定义点位
+    //定义点位
+    QPoint pt;
     pt.setX((event->pos().x())/MAX_X);
     pt.setY((event->pos().y())/MAX_Y);
 
@@ -138,6 +139,7 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
         p_ChessItem.clear();
         return;
     }
+
     //该下一方下棋了
     b_black = !b_black;
 }
